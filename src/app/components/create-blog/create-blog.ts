@@ -81,7 +81,7 @@ export class CreateBlog {
         },
         error: (err) => {
           console.log(err);
-          this.toaster.error(err.error?.message || 'Error creating blog');
+          this.toaster.error(err.message || 'Error creating blog');
         },
       });
 
