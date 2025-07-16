@@ -1,5 +1,5 @@
 <!-- Blog Grid Section -->
-<div class="px-4 pb-12">
+<div class="p-6 px-4 pb-8">
     <div class="max-w-7xl mx-auto">
 
         <!-- Loading State -->
@@ -19,7 +19,7 @@
         </div>
 
         <!-- Navigation -->
-        <div class="mt-12 pt-8 border-t border-gray-200" *ngIf="blogPosts.length > 0">
+        <div class="mt-12 pt-8 border-t border-gray-200" *ngIf="blogPosts.length > 0 && !loading">
             <div class="flex items-center justify-between text-sm sm:text-base">
                 <!-- Previous Button -->
                 <button (click)="goToPreviousPage()"
